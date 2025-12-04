@@ -2,7 +2,6 @@
 // 原始 SwissTable（ctrl 指针版本）+ 分片 + seqlock + O(N) 序列化/反序列化（仅使用 Array 存储）
 package techarena
 
-import std.core.*
 import std.sync.*          // ReentrantMutex, AtomicUInt64
 
 // --------------- FFI / C interop ---------------
@@ -787,3 +786,4 @@ public class KeyValue {
         return kv
     }
 }
+
